@@ -427,9 +427,9 @@ button:disabled {
 }
 
 .device-warning {
-  background: #fff3cd;
-  color: #3b2f00;
-  border: 1px solid #ffe69c;
+  background: #2a3150;
+  color: white;
+  border: 1px solid #7c4dff;
   padding: 12px;
   border-radius: 10px;
   margin-top: 20px;

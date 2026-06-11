@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Space Academy - Launch Lab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo">🚀 Launch Lab</div>
+
+  <div class="menu">
+    <a href="index.html">Home</a>
+    <a href="missions.html">Missions</a>
+    <a href="simulations.html">Simulations</a>
+    <a href="academy.html">Space Academy</a>
+    <a href="about.html">About</a>
+  </div>
+</nav>
+
+<div class="card">
+
+  <h1>🎓 Space Academy</h1>
+
+  <p class="tagline">
+    Complete missions, answer questions, and explore space.
+  </p>
+
+  <h2>🚀 Mission 1: Reach the Space Station</h2>
+
+<p id="energy"><b>Energy:</b> 50 ⚡</p>
+
+<div id="game-area">
+  <div id="academy-rocket">🚀</div>
+
+  <div class="mission2-obstacle" id="obstacle1">☄️</div>
+  <div class="mission2-obstacle" id="obstacle2">🪨</div>
+  <div class="mission2-obstacle" id="obstacle3">☄️</div>
+  <div class="mission2-obstacle" id="obstacle4">⚠️</div>
+  <div class="mission2-obstacle" id="obstacle5">☄️</div>
+  
+  <div class="space-wall" id="wall1"></div>
+
+  <div id="wall2"></div>
+
+  <div id="station">🛰️</div>
+</div>
+
+<p id="academy-message">
+  Press the right arrow key to move. Moving costs energy.
+</p>
+
+<button id="question-button" onclick="loadQuestion()">
+  Answer Question for Energy
+</button>
+
+<div id="question-box" style="display:none;">
+  <h3 id="question-text"></h3>
+
+  <button onclick="answerQuestion('A')" id="choiceA"></button>
+  <button onclick="answerQuestion('B')" id="choiceB"></button>
+  <button onclick="answerQuestion('C')" id="choiceC"></button>
+</div>
+
+<button id="next-mission" style="display:none;">
+  🚀 Next Mission
+</button>
+
+<div id="mission2-section" style="display:none;">
+
+  <h2>☄️ Mission 2: Obstacle Course to Orbit</h2>
+
+  <p id="mission2-energy"><b>Energy:</b> 100 ⚡</p>
+
+  <div id="mission2Game">
+  <div id="rocket2">🚀</div>
+  <div id="orbitZone">ORBIT</div>
+</div>
+
+  <p id="mission2-message">
+    Use the arrow keys to dodge obstacles and reach orbit.
+  </p>
+
+</div>
+
+</div>
+
+<script src="academy.js"></script>
+
+</body>
+</html>

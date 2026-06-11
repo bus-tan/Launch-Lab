@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simulations - Launch Lab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="logo">🚀 Launch Lab</div>
+  <div class="menu">
+    <a href="index.html">Home</a>
+    <a href="missions.html">Missions</a>
+    <a href="simulations.html">Simulations</a>
+    <a href="academy.html">Space Academy</a>
+    <a href="about.html">About</a>
+  </div>
+</nav>
+
+<div class="card">
+
+  <h1>🛰️ Simulations</h1>
+  <p class="tagline">
+    Test rocket ideas and learn why they work.
+  </p>
+
+<h2>Can You Reach Orbit?</h2>
+
+  <div class="simulation-container">
+
+    <!-- LEFT SIDE -->
+    <div class="simulation-area">
+
+<img src="earth.png" id="earth">
+
+      <div id="launch-area">
+        <div id="rocket">🚀</div>
+        <div id="flame">🔥</div>
+      </div>
+
+      <div id="launchpad">
+        ════════════════════
+        <br>
+        Launch Pad
+      </div>
+
+<div id="earth"></div>
+
+    </div>
+
+    <!-- RIGHT SIDE -->
+    <div class="control-panel">
+
+            <select id="level">
+        <option value="100">Stage 1: Low Earth Orbit</option>
+        <option value="150" disabled>
+          🔒 Stage 2: Stable Orbit
+        </option>
+        <option value="200" disabled>
+          🔒 Stage 3: Satellite Deployment
+        </option>
+      </select>
+
+      <label class="tooltip">
+  Fuel ⛽
+  <span class="tooltip-text">
+    Fuel powers the rocket. More fuel helps the rocket travel farther and reach higher altitudes.
+  </span>
+</label>
+<input type="range" id="fuel" min="0" max="100" value="50">
+
+<label class="tooltip">
+  Mass 🪨
+  <span class="tooltip-text">
+    Mass is how heavy the rocket is. Heavier rockets need more power to lift off.
+  </span>
+</label>
+<input type="range" id="mass" min="0" max="100" value="50">
+
+<label class="tooltip">
+  Thrust 🔥
+  <span class="tooltip-text">
+    Thrust is the force produced by the rocket's engines. More thrust helps push the rocket upward.
+  </span>
+</label>
+<input type="range" id="thrust" min="0" max="100" value="50">
+
+<div id="stage2-controls" style="display:none;">
+
+  <label class="tooltip">
+    Drag 🌬️
+    <span class="tooltip-text">
+      Drag is air resistance. High drag slows the rocket down and reduces its altitude.
+    </span>
+  </label>
+  <input type="range" id="drag" min="0" max="100" value="60">
+
+  <label class="tooltip">
+    Stability ⚖️
+    <span class="tooltip-text">
+      Stability measures how well the rocket stays balanced and under control during flight.
+    </span>
+  </label>
+  <input type="range" id="stability" min="0" max="100" value="40">
+
+</div>
+
+</div>
+
+      <button onclick="launchRocket()">
+        LAUNCH
+      </button>
+
+      <button onclick="resetRocket()">
+        RESET
+      </button>
+
+      <p id="score">
+        Target: 100 km | Best Altitude: 0 km
+      </p>
+
+      <p id="result">
+        Mission report will appear here.
+      </p>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

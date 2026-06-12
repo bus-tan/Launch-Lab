@@ -208,10 +208,17 @@ button:disabled {
   background: #02030a;
   border: 2px solid #7c4dff;
   border-radius: 15px;
-  overflow: hidden;
+  overflow-x: auto;
+  overflow-y: hidden;
   margin: 20px auto 0 auto;
   width: 90%;
   max-width: 900px;
+}
+
+#game-map {
+  position: relative;
+  width: 950px;
+  height: 350px;
 }
 
 #academy-rocket {

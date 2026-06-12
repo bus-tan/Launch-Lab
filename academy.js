@@ -399,6 +399,9 @@ if (event.key === "q" || event.key === "Q") {
       document.getElementById("academy-message").innerHTML =
         "🏆 Mission Complete! You reached the Space Station!";
 
+      document.getElementById("badge").innerHTML =
+        "🏅 Badge: Rocket Cadet";
+
       document.getElementById("next-mission").style.display = "block";
       document.getElementById("question-box").style.display = "none";
     }

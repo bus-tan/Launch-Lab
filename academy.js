@@ -397,8 +397,6 @@ if (event.key === "q" || event.key === "Q") {
       gameComplete = true;
 
       document.getElementById("academy-message").innerHTML =
-
-        alert("Mission Complete!");
         
         "🏆 Mission Complete! You reached the Space Station!";
       

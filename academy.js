@@ -456,3 +456,8 @@ document.getElementById("obstacle5").style.left =
   checkMission2Obstacles();
 
 }, 30);
+
+function changeRocket(skin) {
+  document.getElementById("academy-rocket").innerHTML = skin;
+}
+
